@@ -1,0 +1,30 @@
+<html>
+<head>
+
+</head>
+
+<body>
+<script type = "text/javascript">
+<!--
+var value = prompt("Enter ssn number in format of xxx-xx-xxxx\n", "");
+
+var pos = value.search(/\d\d\-\d\d\-\d\d\d\d/);
+if(pos>=0)
+	document.write("SSN valid", "<br/>");
+else
+	document.write("SSN invalid", "<br/>");
+
+var value2 = prompt("Enter date in format of DD/MM/YYYY\n", "");
+
+
+var pos2 = value2.search(/\d\d\/\d\d\/\d\d\d\d/);
+
+if(pos2>=0)
+	document.write("Date valid");
+else
+	document.write("Date invalid");
+
+// -->
+</script>
+</body>
+</html>

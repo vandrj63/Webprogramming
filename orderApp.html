@@ -1,0 +1,83 @@
+<html>
+<head>
+<script type = "text/javascript">
+
+//var size;
+
+
+
+
+function computeCost() {
+        var pepporni = document.getElementById("pepporni").value;
+        var mushrooms = document.getElementById("mushrooms").value;
+        var sausage = document.getElementById("sausage").value;
+
+
+        document.getElementById("cost").value =
+         totalCost = pepporni * 1.00 + mushrooms * 1.00 +
+                     sausage * 1.00;
+      }  //* end of computeCost
+
+</script>
+
+</head>
+<body>
+
+<form id = "myForm"  action = "submitted.html">
+    <p>
+    <input type = "radio"  name = "planeButton"
+           onclick = "planeChoice(152)" />
+       Large
+    <br />
+      <input type = "radio"  name = "planeButton"
+             onclick = "planeChoice(172)" />
+       Medium
+    <br />
+      <input type = "radio"  name = "planeButton"
+             onclick = "planeChoice(182)" />
+       small
+    <br />
+    <input type = "radio"  name = "planeButton"
+           onclick = "planeChoice(210)" />
+       slice
+    </p>
+
+
+
+<table border = "1">
+ 	<tr>
+        <th> Toppings </th>
+        <th> addictional cost </th>
+        <th> Quantity </th>
+ 	</tr>
+
+        <tr>
+        <th> pepporni (1 lb.) </th>
+        <td> $1.00 </td>
+        <td> <input type = "text"  id = "pepporni"
+                      size ="2" /> </td>
+        </tr>
+        <tr>
+	<th> mushrooms (1 lb.)</th>
+	<td> $1.00 </td>
+	<td> <input type = "text" id = "mushrooms" size "2" /> </td>
+	</tr>
+	<tr>
+	<th> sausage (1 lb.)</th>
+	<td> $1.00 </td>
+	<td> <input type = "text" id = "sausage" size "2" /> </td>
+	</tr>
+</table>
+<p>
+        <input type = "button"  value = "Total Cost"
+               onclick = "computeCost();" />
+        <input type = "text"  size = "5"  id = "cost"
+               onfocus = "this.blur();" />
+	<br>
+	<input type = "submit" value "Submit" />
+	<input type = "reset" value = "clear" />
+</p>
+</form>
+
+</body>
+</html>

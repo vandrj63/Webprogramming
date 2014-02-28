@@ -1,0 +1,36 @@
+<html>
+
+<script type = "text/javascript">
+<!--
+// 
+var x = prompt("first?\n", "");
+var y = prompt("second?\n", "");
+var z = prompt("third?\n", "");
+//convert to numbers….
+var a=Number(x);
+var b=Number(y);
+var c=Number(z);
+// Compute the ordering
+var big;
+var med;
+var small;
+if (a>b && a>c){big=a;}
+else if(b >a && b > c){big=b;}
+else if (c>a && c >b){big=c;}
+
+if(a<b && a<c){small=a;}
+else if(b<a && b<c){small=b;}
+else if(c<a && c<b){small=c;}
+
+if(a>b && a<c){med=a;}
+else if(b>a && b<c){med=b;}
+else if(c>a && c<b){med=c;}
+
+//small=big==a?b:a;
+
+document.write("The bigger is ", big, " the middle is ", med, " the smaller is ");
+document.write( small, "<br />");
+// -->
+</script>
+
+</html>
